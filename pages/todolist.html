@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../styles/taskpages.css">
+    <title>لیست کارها</title>
+</head>
+<body>
+<section id="body" class="body">
+    <header class="header">
+        <div class="header__title">
+            <span class="header__title-text">منو ابزار</span>
+        </div>
+        <div class="musicBar">
+            <div class="music-title">مدیریت موزیک</div>
+            <div class="music-icon" id="musicPlay"><span class="material-symbols-outlined">play_circle</span></div>
+            <div class="music-icon" id="musicPause"><span class="material-symbols-outlined">pause_circle</span></div>
+            <div class="music-icon" id="musicNext"><span class="material-symbols-outlined">skip_next</span></div>
+            <div class="music-icon" id="musicPrev"><span class="material-symbols-outlined">skip_previous</span></div>
+            <div class="music-close"><span class="material-symbols-outlined">close</span></div>
+        </div>
+        <div class="icon-bar">
+            <div class="header__DarkLight">
+                <div class="header__DarkLight-handler">
+                    <span class="material-symbols-outlined dark-Light-icon">light_mode</span>
+                </div>
+            </div>
+            <div class="header__music"><span class="material-symbols-outlined">music_note</span></div>
+            <div class="header__home">
+                <span class="material-symbols-outlined">home</span>
+            </div>
+        </div>
+    </header>
+    <section class="addTask">
+        <div class="addTask__box">
+            <p class="addTask__title">ایجاد تسک</p>
+            <div class="creatTask">
+                <div class="creatTask-add">+</div>
+            </div>
+        </div>
+        <div class="addTask__addWindow">
+            <h2 class="addTask__addWindow-title">ایجاد تسک ...</h2>
+            <div class="form-addTask">
+                <input type="text" class="addTask__addWindow-input" placeholder="تسک خود را وارد کنید...">
+                <button class="addTask__addWindow-button">ایجاد تسک</button>
+            </div>
+        </div>
+    </section>
+    <section class="taskBody">
+        <ul class="ul">
+            <li class="Task">
+                <span class="Task__title-text">تسک نمونه</span>
+                <span id='trash' class="material-symbols-outlined">delete</span>
+            </li>
+        </ul>
+    </section>
+</section>
+    <section class="bodyBlack"></section>
+<script src="../apps/task.js" defer></script>
+</body>
+</html>

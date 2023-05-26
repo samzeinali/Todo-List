@@ -1,0 +1,167 @@
+:root {
+    --color-primery-text : #333;
+    --color-background : #f3f7f7;
+    --font-primery-text : danaVF;
+    --font-subtext : peyda;
+}
+@font-face {
+    font-family: danaVF;
+    src: url(../assesets/Fonts/DanaVF.woff2);
+}
+@font-face {
+    font-family: danaBOLD;
+    src: url(../assesets/Fonts/DanaFaNum-Bold.woff2);
+}
+@font-face {
+    font-family: peyda;
+    src: url(../assesets/Fonts/PeydaWeb-Bold.woff2);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+body {
+    direction: rtl;
+}
+.fullPages {
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--color-background); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assesets/Images/back-wal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 85%;
+    padding: 10px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px #75757517;
+}
+.login__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.Login__title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerLogin {
+    font-family: var(--font-subtext);
+    color: var(--color-primery-text);
+    font-size: 1.9rem;
+}
+.cardbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.loginCards {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 2px rgba(51, 51, 51, 0.039);
+    height: 70px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.loginCards:hover {
+    border: 1px solid #333;
+    transition: 0.5s;
+    background-color: rgb(34, 141, 181);
+    box-shadow: 1px 1px 8px 5px rgba(51, 51, 51, 0.162);
+}
+.Login__todoList {
+    background-color: rgb(60, 160, 222);
+    /* background-color: lightskyblue; */
+}
+.login-brainStorm {
+    background-color: rgb(117, 188, 233);
+}
+.login-help {
+    /* background-color: rgb(60, 160, 222); */
+    background-color: lightskyblue;
+}
+.loginCards-text {
+    font-size: 1.5rem;
+    font-family: var(--font-primery-text);
+    color: #fff;
+    font-weight: 500;
+}
+.info-Icon {
+    font-size: 2.5rem !important;
+    position: absolute;
+    left: 10px;
+}
+.PopUP-Login {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    background-color: #fff;
+    z-index: 3;
+    position: absolute;
+    width: 90%;
+}
+.title__popup {
+
+}
+.title__popup-text {
+
+}
+.separetor__pop {
+
+}
+.description__popup {
+
+}
+.descrioption__popup-card {
+
+}
+.todolist__image {
+
+}
+.todolist__image-image {
+
+}
+.todolist__description {
+
+}
+.todolist__description-text {
+
+}
+@media(min-width : 400px){
+
+}
+@media(min-width : 500px){
+    .fullPages {
+        background-image: url('../assesets/Images/NLzO4Y.jpg');
+        /* background-color: var(--color-background); */
+    }
+    .container {
+        width: 425px;
+    }
+}
+@media(min-width : 750px){
+    .container {
+        width: 475px;
+    }
+}

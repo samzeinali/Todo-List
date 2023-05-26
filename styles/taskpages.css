@@ -1,0 +1,334 @@
+:root {
+    --color-primery-text : #333;
+    --color-background : #fbfefe;
+    --font-primery-text : danaVF;
+    --font-subtext : peyda;
+}
+@font-face {
+    font-family: danaVF;
+    src: url(../assesets/Fonts/DanaVF.woff2);
+}
+@font-face {
+    font-family: danaBOLD;
+    src: url(../assesets/Fonts/DanaFaNum-Bold.woff2);
+}
+@font-face {
+    font-family: peyda;
+    src: url(../assesets/Fonts/PeydaWeb-Bold.woff2);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+body {
+    direction: rtl;
+    background-color: var(--color-background);
+}
+.body { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+}
+.bodyBlack {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+    z-index: 2;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.282);
+    background-color: rgb(183, 183, 183);
+    /* background-color: #ffffff00; */
+    padding: 15px 15px;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+.header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__title-text {
+    color: #333;
+    font-size: 1.3rem;
+    font-family: var(--font-subtext);
+}
+.header__music {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.musicBar {
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.623);
+    border-radius: 20px;
+    width: 200px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* height: 200px; */
+    top: 10%;
+    right: 20%;
+    border: 1px solid rgb(32, 32, 32);
+}
+.music-title {
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--font-primery-text);
+    font-weight: 500;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    margin-bottom: 5px;
+}
+.music-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(226, 223, 223, 0.644);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.music-icon:hover {
+    background-color: rgba(255, 255, 255, 0.508);
+    color: #333;
+}
+.music-close { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: #f3f7f7;
+}
+.header__DarkLight {
+    width: 45px;
+    padding: 3px;
+    background-color: blue;
+    border-radius: 16px;
+    border: 1px solid #333;
+    outline: 0px;
+    position: relative;
+    height: 24px;
+    transition: 1s;
+}
+.dark-Light-icon {
+    font-size: 1.2rem;
+    display: inline;
+    transition: 1s;
+}
+.header__DarkLight-handler {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    cursor: pointer;
+    position: absolute;
+    top:5%;
+    right: 5%;
+    transition: 0.7s;
+}
+.icon-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__home {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.addTask {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: var(--color-background);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+}
+.addTask__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.addTask__title {
+    font-size: 2rem;
+    font-family: var(--font-subtext);
+}
+.creatTask {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #333;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.creatTask:hover { 
+    scale: 1.1;
+    border: 1px solid #333;
+}
+.creatTask-add {
+    font-size: 3.5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.addTask__addWindow {
+    display: none;
+    position: absolute;
+    top: 45vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 70%;
+    padding: 20px;
+    background-color: #f3f7f7;
+    border: 1px solid #333;
+    border-radius: 20px;
+    z-index: 3;
+}
+.addTask__addWindow-title {
+    font-size: 2rem;
+    font-family: var(--font-subtext);
+    color: #333;
+    margin-bottom: 20px;
+}
+.form-addTask { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: column;
+}
+.addTask__addWindow-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #33333361;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-family: var(--font-primery-text);
+}
+.addTask__addWindow-button {
+    width: 50%;
+    padding: 10px 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: var(--font-primery-text);
+    border-top-right-radius: 0px;
+    background-color: rgb(125, 192, 234);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addTask__addWindow-button:hover {
+    background-color: rgb(153, 217, 242);
+}
+.ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+.taskBody {
+    width: 100%;
+    background-color: var(--color-background);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.Task {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgb(198, 247, 36);
+    box-shadow: 1px 1px 2px 2px rgba(51, 51, 51, 0.232);
+    transition: 0.7s;
+    margin-bottom: 10px;
+}
+.Task:hover { 
+    box-shadow: 1px 1px 6px 3px rgba(51, 51, 51, 0.232);
+    scale : 1.05;
+}
+.Task__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Task__title-text {
+    font-size: 1.4rem;
+    font-family: var(--font-primery-text);
+    font-weight: 400;
+}
+.Task__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Task__icons-delete {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Task__icons-delete:hover {
+    background-color: rgba(241, 70, 70, 0.365);
+    border-radius: 8px;
+}
+.Task__icons-done {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Task__icons-done:hover {
+    border-radius: 8px;
+    background-color: rgba(20, 140, 20, 0.515);
+}
+
+@media(min-width:600px){
+    .addTask__addWindow {
+        width: 350px;
+    }   
+}
